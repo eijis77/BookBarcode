@@ -3,18 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		4250C72126FF446F0020E6CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4250C72026FF446F0020E6CC /* AppDelegate.swift */; };
 		4250C72326FF446F0020E6CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4250C72226FF446F0020E6CC /* SceneDelegate.swift */; };
-		4250C72526FF446F0020E6CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4250C72426FF446F0020E6CC /* ViewController.swift */; };
+		4250C72526FF446F0020E6CC /* BookList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4250C72426FF446F0020E6CC /* BookList.swift */; };
 		4250C72826FF446F0020E6CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4250C72626FF446F0020E6CC /* Main.storyboard */; };
 		4250C72A26FF44710020E6CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4250C72926FF44710020E6CC /* Assets.xcassets */; };
 		4250C72D26FF44710020E6CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4250C72B26FF44710020E6CC /* LaunchScreen.storyboard */; };
 		4250C73826FF44710020E6CC /* BookBarcodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4250C73726FF44710020E6CC /* BookBarcodeTests.swift */; };
 		4250C74326FF44710020E6CC /* BookBarcodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4250C74226FF44710020E6CC /* BookBarcodeUITests.swift */; };
+		4250C75126FF45820020E6CC /* BarcodeLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4250C75026FF45820020E6CC /* BarcodeLoad.swift */; };
+		4250C75326FF45D70020E6CC /* CaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4250C75226FF45D70020E6CC /* CaptureViewController.swift */; };
+		4250C75526FF461B0020E6CC /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4250C75426FF461B0020E6CC /* UIColor+Hex.swift */; };
+		4250C75726FF46590020E6CC /* BookInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4250C75626FF46590020E6CC /* BookInfoModel.swift */; };
+		4250C75926FF49C40020E6CC /* BookCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4250C75826FF49C40020E6CC /* BookCustomCell.swift */; };
+		4250C75B26FF6A9D0020E6CC /* CustomState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4250C75A26FF6A9D0020E6CC /* CustomState.swift */; };
+		A187619D3475B656BEF69AEF /* Pods_BookBarcode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EE24850337736D0DE430FC5 /* Pods_BookBarcode.framework */; };
+		DE75B5169F83B9C2D4FE68E8 /* Pods_BookBarcodeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7589AD3A95273EE96C4DD5 /* Pods_BookBarcodeTests.framework */; };
+		EF5FDF4AB19B914814425E89 /* Pods_BookBarcode_BookBarcodeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E02D344F2D7284264A5B3E /* Pods_BookBarcode_BookBarcodeUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +44,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09CB39264D55CEE2148650D7 /* Pods-BookBarcode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookBarcode.release.xcconfig"; path = "Target Support Files/Pods-BookBarcode/Pods-BookBarcode.release.xcconfig"; sourceTree = "<group>"; };
+		29E02D344F2D7284264A5B3E /* Pods_BookBarcode_BookBarcodeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookBarcode_BookBarcodeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B1BAC784ECB2DAD97611C07 /* Pods-BookBarcodeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookBarcodeTests.debug.xcconfig"; path = "Target Support Files/Pods-BookBarcodeTests/Pods-BookBarcodeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2D7589AD3A95273EE96C4DD5 /* Pods_BookBarcodeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookBarcodeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39CFF04C7E416AE7DA73250F /* Pods-BookBarcode-BookBarcodeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookBarcode-BookBarcodeUITests.debug.xcconfig"; path = "Target Support Files/Pods-BookBarcode-BookBarcodeUITests/Pods-BookBarcode-BookBarcodeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4250C71D26FF446F0020E6CC /* BookBarcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookBarcode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4250C72026FF446F0020E6CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4250C72226FF446F0020E6CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4250C72426FF446F0020E6CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4250C72426FF446F0020E6CC /* BookList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookList.swift; sourceTree = "<group>"; };
 		4250C72726FF446F0020E6CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4250C72926FF44710020E6CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4250C72C26FF44710020E6CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +63,16 @@
 		4250C73E26FF44710020E6CC /* BookBarcodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookBarcodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4250C74226FF44710020E6CC /* BookBarcodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookBarcodeUITests.swift; sourceTree = "<group>"; };
 		4250C74426FF44710020E6CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4250C75026FF45820020E6CC /* BarcodeLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeLoad.swift; sourceTree = "<group>"; };
+		4250C75226FF45D70020E6CC /* CaptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureViewController.swift; sourceTree = "<group>"; };
+		4250C75426FF461B0020E6CC /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		4250C75626FF46590020E6CC /* BookInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInfoModel.swift; sourceTree = "<group>"; };
+		4250C75826FF49C40020E6CC /* BookCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCustomCell.swift; sourceTree = "<group>"; };
+		4250C75A26FF6A9D0020E6CC /* CustomState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomState.swift; sourceTree = "<group>"; };
+		9EE24850337736D0DE430FC5 /* Pods_BookBarcode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookBarcode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B32AD8B2879B061D52D9EE26 /* Pods-BookBarcodeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookBarcodeTests.release.xcconfig"; path = "Target Support Files/Pods-BookBarcodeTests/Pods-BookBarcodeTests.release.xcconfig"; sourceTree = "<group>"; };
+		C3ADEE79B9FA320EC4DE44C1 /* Pods-BookBarcode-BookBarcodeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookBarcode-BookBarcodeUITests.release.xcconfig"; path = "Target Support Files/Pods-BookBarcode-BookBarcodeUITests/Pods-BookBarcode-BookBarcodeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FE8C08A140C630D8ACD70951 /* Pods-BookBarcode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookBarcode.debug.xcconfig"; path = "Target Support Files/Pods-BookBarcode/Pods-BookBarcode.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A187619D3475B656BEF69AEF /* Pods_BookBarcode.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE75B5169F83B9C2D4FE68E8 /* Pods_BookBarcodeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +96,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF5FDF4AB19B914814425E89 /* Pods_BookBarcode_BookBarcodeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2881184311FA2E5DD48D1DD8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9EE24850337736D0DE430FC5 /* Pods_BookBarcode.framework */,
+				29E02D344F2D7284264A5B3E /* Pods_BookBarcode_BookBarcodeUITests.framework */,
+				2D7589AD3A95273EE96C4DD5 /* Pods_BookBarcodeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4250C71426FF446F0020E6CC = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +120,8 @@
 				4250C73626FF44710020E6CC /* BookBarcodeTests */,
 				4250C74126FF44710020E6CC /* BookBarcodeUITests */,
 				4250C71E26FF446F0020E6CC /* Products */,
+				493F924B064D36A732165464 /* Pods */,
+				2881184311FA2E5DD48D1DD8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,7 +140,13 @@
 			children = (
 				4250C72026FF446F0020E6CC /* AppDelegate.swift */,
 				4250C72226FF446F0020E6CC /* SceneDelegate.swift */,
-				4250C72426FF446F0020E6CC /* ViewController.swift */,
+				4250C72426FF446F0020E6CC /* BookList.swift */,
+				4250C75826FF49C40020E6CC /* BookCustomCell.swift */,
+				4250C75026FF45820020E6CC /* BarcodeLoad.swift */,
+				4250C75226FF45D70020E6CC /* CaptureViewController.swift */,
+				4250C75626FF46590020E6CC /* BookInfoModel.swift */,
+				4250C75426FF461B0020E6CC /* UIColor+Hex.swift */,
+				4250C75A26FF6A9D0020E6CC /* CustomState.swift */,
 				4250C72626FF446F0020E6CC /* Main.storyboard */,
 				4250C72926FF44710020E6CC /* Assets.xcassets */,
 				4250C72B26FF44710020E6CC /* LaunchScreen.storyboard */,
@@ -128,6 +173,19 @@
 			path = BookBarcodeUITests;
 			sourceTree = "<group>";
 		};
+		493F924B064D36A732165464 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE8C08A140C630D8ACD70951 /* Pods-BookBarcode.debug.xcconfig */,
+				09CB39264D55CEE2148650D7 /* Pods-BookBarcode.release.xcconfig */,
+				39CFF04C7E416AE7DA73250F /* Pods-BookBarcode-BookBarcodeUITests.debug.xcconfig */,
+				C3ADEE79B9FA320EC4DE44C1 /* Pods-BookBarcode-BookBarcodeUITests.release.xcconfig */,
+				2B1BAC784ECB2DAD97611C07 /* Pods-BookBarcodeTests.debug.xcconfig */,
+				B32AD8B2879B061D52D9EE26 /* Pods-BookBarcodeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +193,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4250C74726FF44710020E6CC /* Build configuration list for PBXNativeTarget "BookBarcode" */;
 			buildPhases = (
+				752BE7281CD6C6104C29EBC5 /* [CP] Check Pods Manifest.lock */,
 				4250C71926FF446F0020E6CC /* Sources */,
 				4250C71A26FF446F0020E6CC /* Frameworks */,
 				4250C71B26FF446F0020E6CC /* Resources */,
+				BFC2C5DA573B77B8B7D6FA06 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +212,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4250C74A26FF44710020E6CC /* Build configuration list for PBXNativeTarget "BookBarcodeTests" */;
 			buildPhases = (
+				0665663471738F9FFCFB9BEE /* [CP] Check Pods Manifest.lock */,
 				4250C72F26FF44710020E6CC /* Sources */,
 				4250C73026FF44710020E6CC /* Frameworks */,
 				4250C73126FF44710020E6CC /* Resources */,
@@ -170,9 +231,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4250C74D26FF44710020E6CC /* Build configuration list for PBXNativeTarget "BookBarcodeUITests" */;
 			buildPhases = (
+				09A65C803DC2B0EABB4D64A0 /* [CP] Check Pods Manifest.lock */,
 				4250C73A26FF44710020E6CC /* Sources */,
 				4250C73B26FF44710020E6CC /* Frameworks */,
 				4250C73C26FF44710020E6CC /* Resources */,
+				51DD759A280FBBBD5FA42F8A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,14 +316,123 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0665663471738F9FFCFB9BEE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BookBarcodeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		09A65C803DC2B0EABB4D64A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BookBarcode-BookBarcodeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51DD759A280FBBBD5FA42F8A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BookBarcode-BookBarcodeUITests/Pods-BookBarcode-BookBarcodeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BookBarcode-BookBarcodeUITests/Pods-BookBarcode-BookBarcodeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BookBarcode-BookBarcodeUITests/Pods-BookBarcode-BookBarcodeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		752BE7281CD6C6104C29EBC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BookBarcode-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFC2C5DA573B77B8B7D6FA06 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BookBarcode/Pods-BookBarcode-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BookBarcode/Pods-BookBarcode-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BookBarcode/Pods-BookBarcode-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4250C71926FF446F0020E6CC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4250C72526FF446F0020E6CC /* ViewController.swift in Sources */,
+				4250C75726FF46590020E6CC /* BookInfoModel.swift in Sources */,
+				4250C72526FF446F0020E6CC /* BookList.swift in Sources */,
+				4250C75126FF45820020E6CC /* BarcodeLoad.swift in Sources */,
 				4250C72126FF446F0020E6CC /* AppDelegate.swift in Sources */,
+				4250C75526FF461B0020E6CC /* UIColor+Hex.swift in Sources */,
+				4250C75926FF49C40020E6CC /* BookCustomCell.swift in Sources */,
+				4250C75B26FF6A9D0020E6CC /* CustomState.swift in Sources */,
 				4250C72326FF446F0020E6CC /* SceneDelegate.swift in Sources */,
+				4250C75326FF45D70020E6CC /* CaptureViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +538,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -421,7 +593,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -433,6 +605,7 @@
 		};
 		4250C74826FF44710020E6CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE8C08A140C630D8ACD70951 /* Pods-BookBarcode.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -443,15 +616,17 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = eijis00.BookBarcode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		4250C74926FF44710020E6CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09CB39264D55CEE2148650D7 /* Pods-BookBarcode.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -462,15 +637,17 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = eijis00.BookBarcode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		4250C74B26FF44710020E6CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B1BAC784ECB2DAD97611C07 /* Pods-BookBarcodeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +670,7 @@
 		};
 		4250C74C26FF44710020E6CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B32AD8B2879B061D52D9EE26 /* Pods-BookBarcodeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +693,7 @@
 		};
 		4250C74E26FF44710020E6CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39CFF04C7E416AE7DA73250F /* Pods-BookBarcode-BookBarcodeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +714,7 @@
 		};
 		4250C74F26FF44710020E6CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3ADEE79B9FA320EC4DE44C1 /* Pods-BookBarcode-BookBarcodeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
